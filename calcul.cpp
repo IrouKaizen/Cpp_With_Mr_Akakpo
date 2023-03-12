@@ -13,38 +13,38 @@ using namespace std;
 int main()
 {
 
-    float nombre1,nombre2,resultat;
+    float n1,n2,resultat;
     char operateur;
 
     setlocale(LC_TYPE, "");
     cout << "Programme Calculatrice arithmetique" << endl;
     cout << "Entrez le premier nombre :";
-    cin >> nombre1;
+    cin >> n1;
     cout << "Entrez le deuxieme nombre :" ;
-    cin >> nombre2;
+    cin >> n2;
     cout << "Entrez l operateur :" ;
     cin >> operateur;
 
     if(operateur == '+')
     {
-        resultat = nombre1 + nombre2;
+        resultat = n1 + n2;
     }
     else if(operateur == '-')
     {
-        resultat = nombre1 - nombre2;
+        resultat = n1 - n2;
     }
     else if(operateur == '*')
     {
-        resultat = nombre1 * nombre2;
+        resultat = n1 * n2;
     }
     else if(operateur == '/')
     {
-        resultat = float(nombre1 / nombre2);
+        resultat = float(n1 / n2);
     }
 
-    // Affiche le résultat
+    // Affiche le rÃ©sultat
 
     cout<<"operation et resultat :" <<endl;
-    cout<<nombre1 <<operateur << nombre2 << " = " <<resultat <<endl;
+    cout<<n1 <<operateur << n2 << " = " <<resultat <<endl;
     return 0;
 }
