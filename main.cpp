@@ -1,5 +1,5 @@
 #include <iostream>
-//ceci est le commencement, l'autre, monsieur l'a corrigé, c'est sa version
+
 using namespace std;
 
 int main()
