@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1680228729 source:d:\cpp_works\facture\main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+	<clocale>
+
