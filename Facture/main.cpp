@@ -16,21 +16,21 @@ struct Article{
 vector<Article> Articles = {
     {1, "Centrifugeuse", 3700.00},
     {2, "Grille-pain", 1995.00},
-    {3, "Four à raclette 6P", 2952.50},
+    {3, "Four Ã  raclette 6P", 2952.50},
     {4, "Mixeur", 1250.00},
-    {5, "Sorbetière", 3300.00},
+    {5, "SorbetiÃ¨re", 3300.00},
     {6, "Vibromasseur", 1300.00},
     {7, "Platine Vinyle", 4569.95}
     };
 
-// Fonction pour rechercher les informations relatives à un article, à partir de son numéro de code
+// Fonction pour rechercher les informations relatives Ã  un article, Ã  partir de son numÃ©ro de code
 Article rechercherArticle(int code) {
     for (const auto &article : Articles) {
         if (article.codeA == code) {
             return article;
         }
     }
-    // Retourne un article vide si le code n'est pas trouvé
+    // Retourne un article vide si le code n'est pas trouvÃ©
     return Article{ 0, "", 0 };
 }
 
@@ -63,28 +63,28 @@ int main()
     setlocale(LC_CTYPE, "");
     //debut
     cout << "Programme de facturation" << endl<< endl;
-    cout << "Combien d’articles à facturer ?: ";
+    cout << "Combien dâ€™articles Ã  facturer ?: ";
     cin >> nbA;
     cout << endl;
 
-// Demande le code de l'article à l'utilisateur
+// Demande le code de l'article Ã  l'utilisateur
     for(i=1; i<=nbA; i++){
-        cout << "Article N°" << i << endl;
+        cout << "Article NÂ°" << i << endl;
         cout << "Code article ?: ";
         cin >> code;
-    // Recherche de l'article correspondant au code entré
+    // Recherche de l'article correspondant au code entrÃ©
         Article article = rechercherArticle(code);
 
-    // Vérifie si l'article a été trouvé
+    // VÃ©rifie si l'article a Ã©tÃ© trouvÃ©
         if (article.codeA = code) {
-            cout << "Quantité de " << article.libelle << " au prix unitaire de " << article.prixU << " ?: ";
+            cout << "QuantitÃ© de " << article.libelle << " au prix unitaire de " << article.prixU << " ?: ";
             cin >> Qte;
             cout << endl;
-    // Ajoute l'article et la quantité à la facture
+    // Ajoute l'article et la quantitÃ© Ã  la facture
         lignesFacture.push_back(make_pair(article, Qte));
         } else {
-        // Affiche un message d'erreur si l'article n'a pas été trouvé
-            cout << "Article non trouvé." << endl;
+        // Affiche un message d'erreur si l'article n'a pas Ã©tÃ© trouvÃ©
+            cout << "Article non trouvÃ©." << endl;
         }
 }
 // Affichage de la facture
@@ -97,3 +97,16 @@ int main()
 
     return 0;
 }
+
+//En C++, struct est un mot-clÃ© utilisÃ© pour dÃ©finir une structure de donnÃ©es. Une structure de donnÃ©es est un type de donnÃ©es
+//composÃ© qui permet de regrouper plusieurs variables de types diffÃ©rents sous un mÃªme nom.
+
+//Voici un exemple de dÃ©claration d'une structure en C++ :
+
+//struct Personne {
+//std::string nom;
+//int age;
+//float taille;
+//};
+//Dans cet exemple, nous avons dÃ©clarÃ© une structure appelÃ©e Personne, qui contient trois variables membres :
+//nom de type std::string, age de type int et taille de type float. Une fois dÃ©clarÃ©e, cette structure peut Ãªtre utilisÃ©e pour crÃ©er des instances de Personne.
